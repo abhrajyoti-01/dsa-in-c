@@ -1,0 +1,16 @@
+# Compiled binaries
+*.exe
+*.out
+*.o
+*.obj
+
+# Editor / OS files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Data files created by programs at runtime
+students.txt
+students.bin
