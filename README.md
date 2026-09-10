@@ -10,7 +10,7 @@
 [![Programs](https://img.shields.io/badge/Programs-198-2ea44f?style=for-the-badge)]()
 [![Modules](https://img.shields.io/badge/Modules-20-8A2BE2?style=for-the-badge)]()
 [![Platform Problems](https://img.shields.io/badge/LeetCode%20%2F%20HackerRank-31-1f6feb?style=for-the-badge)]()
-[![Compiler](https://img.shields.io/badge/Compiler-gcc%20%2DWall%20%2DWextra-FF6C37?style=for-the-badge&logo=gnu&logoColor=white)]()
+[![Compiler](https://img.shields.io/badge/Compiler-gcc%20--Wall%20--Wextra-FF6C37?style=for-the-badge&logo=gnu&logoColor=white)]()
 [![License](https://img.shields.io/badge/License-MIT-4B8BBE?style=for-the-badge)]()
 
 *Every program is input-driven, self-documented, and built to be understood.*
