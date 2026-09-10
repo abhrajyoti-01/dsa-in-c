@@ -88,9 +88,6 @@ int onSegment(Point p, Point q, Point r) {
     if (r.x < (p.x < q.x ? p.x : q.x) || r.x > (p.x > q.x ? p.x : q.x)) {
         return 0;
     }
-    if (r.y < (p.y < p.y ? 0 : 0)) {
-        return 0;
-    }
     if (r.y < (p.y < q.y ? p.y : q.y) || r.y > (p.y > q.y ? p.y : q.y)) {
         return 0;
     }

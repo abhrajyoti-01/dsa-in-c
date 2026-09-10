@@ -122,6 +122,11 @@ int isRightAssociative(char op) {
 
 /*
  * infixToPostfix - Shunting yard with running trace.
+ *
+ * Writes the postfix form into `postfix` (the caller's buffer) and also
+ * keeps the identical running trace in `output` so a partially built
+ * string can be printed at every step. Both stay in sync, and the
+ * result is terminated in `postfix` before returning.
  */
 int infixToPostfix(const char* infix, char* postfix, int verbose) {
     top = -1;
@@ -132,6 +137,7 @@ int infixToPostfix(const char* infix, char* postfix, int verbose) {
 
         if (isalnum((unsigned char)c)) {
             output[out] = c;
+            postfix[out] = c;
             out = out + 1;
             if (verbose) printf("  '%c' operand        -> output: %s\n", c, output);
         } else if (c == '(') {
@@ -141,6 +147,7 @@ int infixToPostfix(const char* infix, char* postfix, int verbose) {
             if (verbose) printf("  ')' pop to '('     ");
             while (!isEmpty() && peek() != '(') {
                 output[out] = pop();
+                postfix[out] = output[out];
                 out = out + 1;
             }
             if (isEmpty()) {
@@ -160,6 +167,7 @@ int infixToPostfix(const char* infix, char* postfix, int verbose) {
                     break;
                 }
                 output[out] = pop();
+                postfix[out] = output[out];
                 out = out + 1;
             }
             push(c);
@@ -176,9 +184,11 @@ int infixToPostfix(const char* infix, char* postfix, int verbose) {
             return 0;
         }
         output[out] = pop();
+        postfix[out] = output[out];
         out = out + 1;
     }
     output[out] = '\0';
+    postfix[out] = '\0';
     return 1;
 }
 

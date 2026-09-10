@@ -100,8 +100,6 @@ int unionSets(int a, int b) {
 int main() {
     int n;
     int e;
-    int u;
-    int v;
     int choice;
 
     printf("Union-Find Applications (easy -> hard)\n\n");

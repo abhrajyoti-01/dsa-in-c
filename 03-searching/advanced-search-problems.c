@@ -185,8 +185,13 @@ int searchRotated(const int arr[], int n, int target) {
 
 /*
  * findDuplicateFloyd - Cycle detection, O(1) space.
+ *
+ * The value range 1..n is guaranteed by the caller, so the array length
+ * n is only needed as documentation of that contract; the walk itself
+ * follows arr[] as a linked list and never indexes past the cycle.
  */
 int findDuplicateFloyd(const int arr[], int n) {
+    (void)n;   /* the contract, not a computation */
     int slow = arr[0];
     int fast = arr[0];
     do {

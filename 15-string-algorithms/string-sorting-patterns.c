@@ -64,7 +64,6 @@ int main() {
     scanf("%199s", s);
 
     while (1) {
-        int len = (int)strlen(s);
         printf("\nCurrent: \"%s\"\n", s);
         printf("1. Sort characters\n");
         printf("2. Remove all occurrences of a char\n");

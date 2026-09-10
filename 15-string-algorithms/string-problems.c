@@ -149,8 +149,15 @@ int main() {
                 printf("Different lengths -> not rotations\n");
                 continue;
             }
-            char doubled[2 * MAX_LEN];
-            snprintf(doubled, sizeof(doubled), "%s%s", s1, s1);
+            /* s1 holds at most MAX_LEN characters plus its terminator, so
+             * the doubled form needs 2*MAX_LEN + 1 bytes: two copies of
+             * the content plus one terminator. Copying exactly len1 bytes
+             * and then len1 + 1 bytes can never exceed that bound, so the
+             * old `%s%s` truncation warning (and any silent loss of the
+             * second half) is impossible here. */
+            char doubled[2 * MAX_LEN + 1];
+            memcpy(doubled, s1, (size_t)len1);
+            memcpy(doubled + len1, s1, (size_t)len1 + 1u);
             int isRot = 0;
             for (int i = 0; i + len1 <= len1 * 2; i++) {
                 int match = 1;

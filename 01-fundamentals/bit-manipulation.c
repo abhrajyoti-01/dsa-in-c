@@ -123,25 +123,29 @@ int main() {
 
         if (choice == 1) {
             printBinary(n);
-        } else if (choice == 2) {
+        } else if (choice >= 2 && choice <= 5) {
+            /* The bit POSITION needs its own variable: `choice` still
+             * holds the menu option, and reusing it would destroy the
+             * branch we are in. Positions outside 0..31 are undefined
+             * behaviour for 32-bit shifts, so they are rejected. */
             printf("Bit position (0-31): ");
-            scanf("%d", &choice);
-            n = n | (1u << choice);
-            printf("Set bit %d -> %u\n", choice, n);
-        } else if (choice == 3) {
-            printf("Bit position (0-31): ");
-            scanf("%d", &choice);
-            n = n & ~(1u << choice);
-            printf("Cleared bit %d -> %u\n", choice, n);
-        } else if (choice == 4) {
-            printf("Bit position (0-31): ");
-            scanf("%d", &choice);
-            n = n ^ (1u << choice);
-            printf("Toggled bit %d -> %u\n", choice, n);
-        } else if (choice == 5) {
-            printf("Bit position (0-31): ");
-            scanf("%d", &choice);
-            printf("Bit %d = %d\n", choice, (int)((n >> choice) & 1u));
+            scanf("%d", &pos);
+            if (pos < 0 || pos > 31) {
+                printf("Position must be 0-31\n");
+                continue;
+            }
+            if (choice == 2) {
+                n = n | (1u << pos);
+                printf("Set bit %d -> %u\n", pos, n);
+            } else if (choice == 3) {
+                n = n & ~(1u << pos);
+                printf("Cleared bit %d -> %u\n", pos, n);
+            } else if (choice == 4) {
+                n = n ^ (1u << pos);
+                printf("Toggled bit %d -> %u\n", pos, n);
+            } else {
+                printf("Bit %d = %d\n", pos, (int)((n >> pos) & 1u));
+            }
         } else if (choice == 6) {
             printf("Set bits: %d\n", countSetBits(n));
         } else if (choice == 7) {

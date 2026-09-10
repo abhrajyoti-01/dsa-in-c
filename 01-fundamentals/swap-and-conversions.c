@@ -137,6 +137,7 @@ int main() {
     int choice;
     int a;
     int b;
+    long long binary;   /* a base-2 number needs its own 64-bit variable */
 
     printf("Swap & Conversion Ladder (easy -> hard)\n\n");
 
@@ -173,8 +174,8 @@ int main() {
             printf("\n");
         } else if (choice == 5) {
             printf("Enter binary (only 0s and 1s): ");
-            scanf("%lld", &b);
-            printf("Decimal: %lld\n", binaryToDecimal(b));
+            scanf("%lld", &binary);
+            printf("Decimal: %lld\n", binaryToDecimal(binary));
         } else if (choice == 6) {
             printf("Enter decimal and base (2-16): ");
             scanf("%d %d", &a, &b);
