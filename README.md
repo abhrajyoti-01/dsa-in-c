@@ -4,11 +4,11 @@
 
 ### A Complete Learning Journey — From Zero to Mastery
 
-**198 programs · 20 modules · 1 LeetCode/HackerRank collection**
+**223 programs · 21 modules · 1 LeetCode/HackerRank collection**
 
 [![Language](https://img.shields.io/badge/Language-C-00599C?style=for-the-badge&logo=c&logoColor=white)](https://en.wikipedia.org/wiki/C_(programming_language))
-[![Programs](https://img.shields.io/badge/Programs-198-2ea44f?style=for-the-badge)]()
-[![Modules](https://img.shields.io/badge/Modules-20-8A2BE2?style=for-the-badge)]()
+[![Programs](https://img.shields.io/badge/Programs-223-2ea44f?style=for-the-badge)]()
+[![Modules](https://img.shields.io/badge/Modules-21-8A2BE2?style=for-the-badge)]()
 [![Platform Problems](https://img.shields.io/badge/LeetCode%20%2F%20HackerRank-31-1f6feb?style=for-the-badge)]()
 [![Compiler](https://img.shields.io/badge/Compiler-gcc%20--Wall%20--Wextra-FF6C37?style=for-the-badge&logo=gnu&logoColor=white)]()
 [![License](https://img.shields.io/badge/License-MIT-4B8BBE?style=for-the-badge)]()
@@ -40,7 +40,7 @@
 
 Most algorithm repositories dump code. This one **teaches**.
 
-Every one of the **198 programs** is a complete, self-contained lesson that includes:
+Every one of the **223 programs** is a complete, self-contained lesson that includes:
 
 | 🧩 Component | What it gives you |
 |---|---|
@@ -70,13 +70,14 @@ Every one of the **198 programs** is a complete, self-contained lesson that incl
 ## 🧭 The Roadmap
 
 ```
-FOUNDATIONS ──► CORE TECHNIQUES ──► HIERARCHICAL DATA ──► DESIGN PARADIGMS ──► ADVANCED ──► MASTER
-     │                 │                   │                   │                 │            │
- 01-fundamentals   03-searching        07-trees-and-heaps   09-greedy        12-graphs    16-network-flow
- 02-recursion      04-sorting          08-hashing-union     10-divide-       13-backtracking 17-geometry
-                  05-stacks-queues        find               conquer         14-branch-bound 18-randomized
-                  06-linked-lists      11-dynamic-          15-string-       19-bitmask-dp
-                                        programming          algorithms      20-advanced-c
+FOUNDATIONS ──► CORE TECHNIQUES ──► HIERARCHICAL DATA ──► DESIGN PARADIGMS ──► ADVANCED ──────► MASTER
+     │                 │                    │                    │                 │              │
+ 01-fundamentals 03-searching       07-trees-and-heaps    09-greedy            12-graphs        16-network-flow
+ 02-recursion    04-sorting         08-hashing-union-     10-divide-and-       13-backtracking  17-geometry
+                 05-stacks-queues      find                  conquer           14-branch-bound  18-randomized
+                 06-linked-lists                          11-dynamic-          15-string-       19-bitmask-dp
+                                                             programming          algorithms    20-advanced-c
+                                                                                                21-approximation
 ```
 
 **The rule:** each module assumes only the modules before it. Follow the numbers — they are the order of learning.
@@ -92,7 +93,7 @@ FOUNDATIONS ──► CORE TECHNIQUES ──► HIERARCHICAL DATA ──► DESI
 | Module | Focus | Programs |
 |:---:|:---|:---|
 | **01-fundamentals** | C building blocks | array-basics, array-problems, subarray-techniques, difference-array, number-checks, pattern-printing, swap-and-conversions, structure-basics, pointer-basics, pointer-operations, dynamic-memory, string-operations, bit-manipulation, matrix-operations, spiral-matrix |
-| **02-recursion-and-mathematics** | Think recursively | factorial, recursion-techniques, tower-of-hanoi, string-permutations, pascal-triangle, josephus, gcd-euclid, modular-inverse, fast-power, sieve-of-eratosthenes, math-techniques |
+| **02-recursion-and-mathematics** | Think recursively | factorial, recursion-techniques, tower-of-hanoi, string-permutations, pascal-triangle, josephus, gcd-euclid, modular-inverse, chinese-remainder-theorem, fast-power, matrix-exponentiation, sieve-of-eratosthenes, math-techniques |
 
 ### 🟡 Level 2 — Core Techniques
 
@@ -101,41 +102,42 @@ FOUNDATIONS ──► CORE TECHNIQUES ──► HIERARCHICAL DATA ──► DESI
 | **03-searching** | From O(n) to O(log n) | linear-search, binary-search, binary-search-variants, advanced-search-problems, jump-search, ternary-search, interpolation-search |
 | **04-sorting** | Every major sort | bubble, selection, insertion, shell, merge, quick, heap, counting, bucket, radix, sorting-problems, structure-sort-quickselect |
 | **05-stacks-queues-deques** | Linear ADTs & their power | stack, queue, deque, balanced-parentheses, infix-to-postfix, postfix-evaluation, stack-variants, queue-variants, next-greater-stock-span, largest-rectangle-histogram, sliding-window-maximum, deque-applications |
-| **06-linked-lists** | Pointer surgery | singly, doubly, circular, linked-list-problems, polynomial-addition |
+| **06-linked-lists** | Pointer surgery | singly, doubly, circular, linked-list-problems, polynomial-addition, skip-list |
 
 ### 🟠 Level 3 — Hierarchical Data
 
 | Module | Focus | Programs |
 |:---:|:---|:---|
-| **07-trees-and-heaps** | Trees, from plain to advanced | heap, binary-tree, bst, bst-problems, avl-tree, red-black-tree, b-tree, threaded-bst, trie, expression-tree, splay-tree, segment-tree, lazy-segment-tree, sparse-table, fenwick-tree, heap-applications, tree-problems-advanced |
-| **08-hashing-and-union-find** | O(1) tricks & set magic | hash-table, hash-linear-probing, hash-problems, union-find, union-find-applications |
+| **07-trees-and-heaps** | Trees, from plain to advanced | heap, binary-tree, bst, bst-problems, avl-tree, red-black-tree, b-tree, threaded-bst, trie, expression-tree, splay-tree, treap, segment-tree, lazy-segment-tree, sparse-table, fenwick-tree, mo-algorithm, heap-applications, tree-problems-advanced |
+| **08-hashing-and-union-find** | O(1) tricks & set magic | hash-table, hash-linear-probing, hash-problems, bloom-filter, union-find, union-find-applications |
 
 ### 🔵 Level 4 — Design Paradigms
 
 | Module | Focus | Programs |
 |:---:|:---|:---|
 | **09-greedy** | Local optimum → global optimum | activity-selection, coin-change-greedy, knapsack-fractional, job-sequencing, minimum-platforms, intervals-greedy, huffman-coding |
-| **10-divide-and-conquer** | Split, solve, merge | min-max, closest-pair, inversions-median, strassen |
-| **11-dynamic-programming** | Overlapping subproblems | fibonacci, climbing-stairs-house-robber, grid-dp, kadane, coin-change-dp, knapsack-0-1, lcs, lis, edit-distance, matrix-chain-multiplication, optimal-bst, rod-cutting, partition-equal-sum, palindromic-subsequence, egg-dropping, boolean-parenthesization, subset-sum-problems, weighted-interval-scheduling |
+| **10-divide-and-conquer** | Split, solve, merge | master-theorem, min-max, closest-pair, inversions-median, median-of-medians, karatsuba, strassen, fft-polynomial-multiplication |
+| **11-dynamic-programming** | Overlapping subproblems | fibonacci, climbing-stairs-house-robber, grid-dp, kadane, coin-change-dp, knapsack-0-1, lcs, lis, edit-distance, multistage-graph, matrix-chain-multiplication, optimal-bst, rod-cutting, partition-equal-sum, palindromic-subsequence, egg-dropping, boolean-parenthesization, subset-sum-problems, weighted-interval-scheduling, digit-dp |
 
 ### 🔴 Level 5 — Advanced
 
 | Module | Focus | Programs |
 |:---:|:---|:---|
-| **12-graphs** | The full graph toolkit | graph-problems, bfs, dfs, topo-sort, connected-components, dijkstra, zero-one-bfs, bellman-ford, floyd-warshall, warshall, prim, kruskal, kosaraju-scc, bridges-articulation, bipartite-check, euler-path, grid-graph-problems, lca-binary-lifting |
+| **12-graphs** | The full graph toolkit | graph-problems, bfs, dfs, topo-sort, connected-components, dijkstra, zero-one-bfs, a-star-search, bellman-ford, floyd-warshall, warshall, prim, kruskal, kosaraju-scc, tarjan-scc, two-sat, bridges-articulation, bipartite-check, euler-path, grid-graph-problems, lca-binary-lifting |
 | **13-backtracking** | Explore, choose, undo | subsets-combinations-word-search, n-queens, sum-of-subsets, rat-in-maze, knights-tour, sudoku-solver, hamiltonian-cycle, graph-coloring, tsp-backtracking |
 | **14-branch-and-bound** | Search with pruning | knapsack-branch-bound, tsp-branch-and-bound, fifteen-puzzle-solver |
-| **15-string-algorithms** | Pattern matching done right | naive-string-matching, kmp-string-matching, z-algorithm, rabin-karp, boyer-moore, manacher, string-problems, string-traversal-techniques, string-sorting-patterns |
+| **15-string-algorithms** | Pattern matching done right | naive-string-matching, kmp-string-matching, z-algorithm, rabin-karp, boyer-moore, manacher, aho-corasick, suffix-array-lcp, string-problems, string-traversal-techniques, string-sorting-patterns |
 
 ### ⚫ Level 6 — Master
 
 | Module | Focus | Programs |
 |:---:|:---|:---|
-| **16-network-flow** | Flow & matching | max-flow, dinic-max-flow, bipartite-matching |
-| **17-computational-geometry** | Geometry on a plane | convex-hull, line-segment-intersection, point-in-polygon |
-| **18-randomized-algorithms** | Probability as a tool | miller-rabin, reservoir-sampling |
-| **19-bitmask-dp-game-theory** | Subset DP & games | tsp-bitmask-dp, assignment-bitmask-dp, catalan-numbers, nim-game |
+| **16-network-flow** | Flow & matching | max-flow, dinic-max-flow, bipartite-matching, min-cost-max-flow |
+| **17-computational-geometry** | Geometry on a plane | convex-hull, line-segment-intersection, point-in-polygon, polygon-area-picks |
+| **18-randomized-algorithms** | Probability as a tool | miller-rabin, reservoir-sampling, karger-min-cut |
+| **19-bitmask-dp-game-theory** | Subset DP & games | tsp-bitmask-dp, assignment-bitmask-dp, sos-dp, catalan-numbers, nim-game, minimax-alpha-beta |
 | **20-advanced-c-programming** | Master-level C | function-pointers, generic-containers, file-handling |
+| **21-approximation-algorithms** | Provably near-optimal answers to NP-hard problems | vertex-cover-approx, set-cover-greedy, metric-tsp-approx |
 
 ### New lessons — basic to advanced
 
@@ -160,6 +162,46 @@ an exact dry run, complexity analysis, and explicit input limits.
 **Suggested progression:** difference-array → sparse-table → lazy-segment-tree
 for range techniques; bfs → zero-one-bfs → lca-binary-lifting for graph queries;
 max-flow → dinic-max-flow for flow networks.
+
+### Round 2 — 25 more lessons and a new module
+
+Same lesson format. Every sample in a header was run, and the printed dry run
+matches the program's real output. Most programs also check themselves against
+a slower method (brute force, school multiplication, sorting, or exhaustive
+search), so you can see the fast algorithm is correct.
+
+| Level | Program | What you learn |
+|:---|:---|:---|
+| Intermediate | master-theorem | Solve T(n) = aT(n/b) + n^d, then confirm it numerically |
+| Intermediate | multistage-graph | Classic forward/backward DP; two different optimal paths |
+| Intermediate | polygon-area-picks | Shoelace area, lattice points, Pick's theorem, verified by counting |
+| Intermediate → Advanced | matrix-exponentiation | Any linear recurrence at n = 10¹⁸ in O(k³ log n) |
+| Intermediate → Advanced | bloom-filter | No false negatives, measurable false positives |
+| Advanced | chinese-remainder-theorem | Merge congruences, including non-coprime moduli |
+| Advanced | skip-list | Expected O(log n) search with coin-flip express lanes |
+| Advanced | treap | Split/merge BST with k-th smallest and rank queries |
+| Advanced | mo-algorithm | Offline distinct-count queries in O((n + q)√n) |
+| Advanced | karatsuba | 3 half-size products instead of 4: O(n^1.585) big integers |
+| Advanced | median-of-medians | Worst-case O(n) selection with groups of five |
+| Advanced | digit-dp | Count numbers up to 10¹⁸ by their digits |
+| Advanced | tarjan-scc | SCCs and the condensation DAG in one DFS |
+| Advanced | a-star-search | Heuristic search vs Dijkstra: same path, fewer expansions |
+| Advanced | karger-min-cut | Monte Carlo min cut, checked against all bipartitions |
+| Advanced | minimax-alpha-beta | Perfect tic-tac-toe; 549,946 vs 20,866 positions searched |
+| Advanced | vertex-cover-approx | Matching-based 2-approximation, tight on the sample |
+| Advanced | set-cover-greedy | Greedy H(d) ≈ ln d approximation with exact comparison |
+| Advanced | metric-tsp-approx | MST double-tree tour vs Held-Karp optimum |
+| Master | fft-polynomial-multiplication | Roots of unity turn convolution into O(n log n) |
+| Master | two-sat | Boolean constraints solved through implication-graph SCCs |
+| Master | aho-corasick | All patterns in one pass with failure and output links |
+| Master | suffix-array-lcp | Prefix doubling + Kasai: distinct substrings, repeats, search |
+| Master | min-cost-max-flow | Cheapest maximum flow by successive shortest paths |
+| Master | sos-dp | Sum over subsets in O(n·2ⁿ) instead of O(3ⁿ) |
+
+**Suggested progression:** master-theorem → karatsuba → median-of-medians →
+fft-polynomial-multiplication for divide and conquer; tarjan-scc → two-sat for
+SCC applications; kmp → aho-corasick → suffix-array-lcp for strings;
+vertex-cover-approx → set-cover-greedy → metric-tsp-approx for NP-hard problems.
 
 ---
 
@@ -220,7 +262,7 @@ hard round; grid-bfs-paths → course-schedule-topo → word-ladder-bfs for grap
 
 ## 🚦 Learning Stages
 
-A curated 32-step path through the repository — some steps group related programs.
+A curated 38-step path through the repository — some steps group related programs.
 
 ### Stage A — Beginner *(pure logic, no fancy structures)*
 | # | Program | Core idea |
@@ -270,6 +312,16 @@ A curated 32-step path through the repository — some steps group related progr
 | 31 | nim-game | game theory & XOR |
 | 32 | function-pointers, generic-containers | master-level C |
 
+### Stage E — Beyond *(analysis, randomness, and NP-hard problems)*
+| # | Program | Core idea |
+|:---:|:---|:---|
+| 33 | master-theorem, karatsuba, median-of-medians | analyse, then beat, the obvious recursion |
+| 34 | treap, skip-list, karger-min-cut | randomness as a design tool |
+| 35 | tarjan-scc → two-sat | SCCs as a logic solver |
+| 36 | aho-corasick, suffix-array-lcp | indexing many patterns and every substring |
+| 37 | min-cost-max-flow, fft-polynomial-multiplication | flows with prices; convolution in O(n log n) |
+| 38 | vertex-cover-approx, set-cover-greedy, metric-tsp-approx | provable approximation guarantees |
+
 ---
 
 ## 🛠️ Getting Started
@@ -306,6 +358,8 @@ gcc -Wall -Wextra -o lru lru-cache-design.c && ./lru
 ```
 
 > ⚠️ **Windows note:** use `gcc` from MinGW/MSYS2 or WSL. All programs are pure standard C — no platform-specific code.
+>
+> 🐧 **Linux note:** programs that call `<math.h>` functions (for example `fft-polynomial-multiplication.c`) need `-lm` at the end of the command: `gcc -Wall -Wextra -o fft fft-polynomial-multiplication.c -lm`.
 
 ---
 
@@ -378,6 +432,23 @@ Every file follows the same lesson structure inside its header comment:
 | Dinic max flow (general case) | O(V²·E) | O(V + E) |
 | Point in polygon (validate / query) | O(n²) / O(n) | O(n) |
 | Assignment bitmask DP | O(n·2ⁿ) | O(2ⁿ + n²) |
+| Matrix exponentiation (order k) | O(k³ log n) | O(k²) |
+| Chinese remainder theorem (k congruences) | O(k log M) | O(1) |
+| Skip list / treap (expected, per operation) | O(log n) | O(n) |
+| Mo's algorithm | O((n + q)√n) | O(n + q) |
+| Bloom filter (k hashes, per operation) | O(k) | m bits |
+| Karatsuba multiplication | O(n^1.585) | O(n) |
+| Median of medians (worst case) | O(n) | O(n) |
+| FFT polynomial multiplication | O(n log n) | O(n log n) |
+| Digit DP (D digits, K remainders) | O(10·D·K) | O(D·K) |
+| Tarjan SCC / 2-SAT | O(V + E) | O(V + E) |
+| A* search (binary heap) | O(V log V) | O(V) |
+| Aho-Corasick (search) | O(n + matches) | O(Σ\|P\|·26) |
+| Suffix array (doubling) + Kasai LCP | O(n log² n) + O(n) | O(n) |
+| Min-cost max-flow (Bellman-Ford) | O(F·V·E) | O(V + E) |
+| Karger min cut (T trials) | O(T·m α(n)) | O(n + m) |
+| SOS DP | O(n·2ⁿ) | O(2ⁿ) |
+| Vertex cover 2-approx / metric TSP 2-approx | O(n + m) / O(n²) | O(n + m) / O(n²) |
 
 ---
 
@@ -386,8 +457,8 @@ Every file follows the same lesson structure inside its header comment:
 Some ideas cannot be written as a single program — but the programs above prepare you for them:
 
 - **P vs NP** — after TSP, knapsack, and graph-coloring, you have felt the exponential wall firsthand
-- **NP-completeness** — reductions between the problems you have coded
-- **Approximation algorithms** — greedy on NP-hard problems (your greedy module is the seed)
+- **NP-completeness** — reductions between the problems you have coded; two-sat shows why 2-SAT is easy while 3-SAT is not
+- **Approximation algorithms** — now a module of its own (21); the next steps are Christofides (factor 1.5) and PTAS schemes
 - **Amortized analysis** — already live in union-find, splay trees, and queue-from-stacks
 - **Sprague-Grundy theorem** — the math behind nim-game
 - **Lower bounds** — why comparison sorting cannot beat O(n log n)
